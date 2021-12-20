@@ -17,41 +17,44 @@
 
 
   <body>
+
+
     <div class="container-fluid">
+      <h1 class="text-center pt-4">MENGHITUNG LUAS</h1>
+      <h2 class="text-center pt-4">PERSEGI / PERSEGI PANJANG</h2>
+      <h2 class="text-center ">&</h2>
+      <h2 class="text-center pb-4">SEGITIGA</h2>
+
+      <div class="container bg-secondary py-4 px-3 ">
 
 
-      <div class="container ">
 
-        <h1 class="text-center">MENGHITUNG LUAS</h1>
-        <h1 class="text-center">PERSEGI/PERSEGI PANJANG DAN SEGITIGA</h1>
-
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-          <option class="active" selected>PILIH BANGUN RUANG DULU</option>
-          <option value="persegi">Persegi & Persegi Panjang</option>
-          <option value="segitiga">Segitiga</option>
-          <option value="keduanya.html">KEDUANYA</option>
+        <select class="form-select form-select-lg mb-1" aria-label="Default select example" onchange="location = this.value;">
+          <option value= "index.html" >PILIH BANGUN RUANG DULU</option>
+          <option value="persegi.html">Persegi & Persegi Panjang</option>
+          <option value="segitiga.html">Segitiga</option>
+          <option value= "keduanya.html" class="active" selected >Keduanya...</option>
         </select>
 
 
-        <div class="row text-center">
-          <div class="col">
-            <div class="card" style="">
+        <div class="row text-center pt-4">
+          <div class="col-12">
+            <div class="card">
               <div class="card-body">
-                <h5 class="card-title">PERSEGI / PERSEGI PANJANG</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h4 class="card-title">PERSEGI / PERSEGI PANJANG</h4>
+                <h6 class="card-subtitle mb-2 text-muted">"Alat pencari Luas Persegi / Persegi Panjang"</h6>
                   <!-- PERSEGI/PERSEGIPANJANG AWAL -->
                   <!-- PERSEGI/PERSEGIPANJANG AWAL -->
                   <!-- PERSEGI/PERSEGIPANJANG AWAL -->         
       
                   <div class="mb-3">
-                      <label for="Panjang" class="form-label">PANJANG</label>
+                      <label for="Panjang" class="form-label"><strong>PANJANG</strong></label>
                       <input type="text" class="form-control text-center" id="panjangP" placeholder="MASUKKAN PANJANG / SISI PERSEGI">
                   </div>
                   
                   <div class="mb-3">
-                      <label for="Panjang" class="form-label">LEBAR</label>
-                      <input type="text" class="form-control text-center" id="lebarP" placeholder="MASUKKAN PANJANG / SISI PERSEGI">
+                      <label for="Panjang" class="form-label"><strong>LEBAR</strong></label>
+                      <input type="text" class="form-control text-center" id="lebarP" placeholder="MASUKKAN LEBAR / SISI PERSEGI">
                   </div>
             
             
@@ -62,12 +65,10 @@
                   </div>
                   <!-- TOMBOL AKHIR -->
 
-
-            
-                  <div  class="content">
-                      <label class="title">Luas</label>
-                      <input class="input" type="text" id="luasP" class="form-control" placeholder="Luas" readonly="">
+                  <div class="pt-4 pb-2">
+                    <input type="text" class=" input text-center" id="luasP" placeholder="HASIL">
                   </div>
+            
                   <!-- PERSEGI/PERSEGIPANJANG AKHIR -->
                   <!-- PERSEGI/PERSEGIPANJANG AKHIR -->
                   <!-- PERSEGI/PERSEGIPANJANG AKHIR -->
@@ -79,35 +80,36 @@
 
 
 
-        <div class="row text-center">
-          <div class="col">
-            <div class="card" style="">
+        <div class="row text-center pt-4">
+          <div class="col-12">
+            <div class="card">
               <div class="card-body">
-                <h5 class="card-title">SEGITIGA</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h4 class="card-title">SEGITIGA</h4>
+                <h6 class="card-subtitle mb-2 text-muted">"Alat pencari Luas Segitiga"</h6>
                   <!-- SEGITIGA AWAL -->
                   <!-- SEGITIGA AWAL -->
                   <!-- SEGITIGA AWAL -->
                   <div class="container">
-                      <div class="content">
-                          <label class="title">Alas</label>
-                          <input class="input" type="text" id="alasS">
+
+                      <div class="mb-3">
+                        <label for="Panjang" class="form-label"><strong>ALAS</strong></label>
+                        <input type="text" class="form-control text-center" id="alasS" placeholder="MASUKKAN ALAS SEGITIGA">
                       </div>
-              
-                      <div  class="content">
-                          <label class="title">Tinggi</label>
-                          <input class="input" type="text" id="tinggiS">
-              
+                      
+                      <div class="mb-3">
+                          <label for="Panjang" class="form-label"><strong>TINGGI</strong></label>
+                          <input type="text" class="form-control text-center" id="tinggiS" placeholder="MASUKKAN TINGGI SEGITIGA">
                       </div>
 
+                      
+                      <!-- TOMBOL AWAL -->
                       <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-primary" type="button" id="tombolS">HITUNG</button>
                       </div>
+                      <!-- TOMBOL AKHIR -->
               
-                      <div  class="content">
-                          <label class="title">Luas</label>
-                          <input class="input" type="text" id="luasS" class="form-control" placeholder="Luas" readonly="">
+                      <div class="pt-4 pb-2">
+                        <input type="text" class=" input text-center" id="luasS" placeholder="HASIL">
                       </div>
                   </div>
                   <!-- SEGITIGA AKHIR -->
@@ -117,16 +119,6 @@
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
 
 
       </div>

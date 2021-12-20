@@ -17,6 +17,8 @@
 
 
   <body>
+
+    
     <div class="container-fluid">
       <h1 class="text-center pt-4">MENGHITUNG LUAS</h1>
       <h2 class="text-center pt-4">PERSEGI / PERSEGI PANJANG</h2>
@@ -26,11 +28,12 @@
       <div class="container bg-secondary py-4 px-3 ">
 
 
+
         <select class="form-select form-select-lg mb-1" aria-label="Default select example" onchange="location = this.value;">
-          <option class="active" selected>PILIH BANGUN RUANG DULU</option>
+          <option value="index.html">PILIH BANGUN RUANG DULU</option>
           <option value="persegi.html">Persegi & Persegi Panjang</option>
-          <option value="segitiga.html">Segitiga</option>
-          <option value="keduanya.html">Keduanya...</option>
+          <option value="segitiga.html"  class="active" selected >Segitiga</option>
+          <option value= "keduanya.html">Keduanya...</option>
         </select>
 
 
@@ -39,10 +42,45 @@
 
 
 
+        <div class="row text-center pt-4">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">SEGITIGA</h4>
+                <h6 class="card-subtitle mb-2 text-muted">"Alat pencari Luas Segitiga"</h6>
+                  <!-- SEGITIGA AWAL -->
+                  <!-- SEGITIGA AWAL -->
+                  <!-- SEGITIGA AWAL -->
+                  <div class="container">
 
+                      <div class="mb-3">
+                        <label for="Panjang" class="form-label"><strong>ALAS</strong></label>
+                        <input type="text" class="form-control text-center" id="alasS" placeholder="MASUKKAN ALAS SEGITIGA">
+                      </div>
+                      
+                      <div class="mb-3">
+                          <label for="Panjang" class="form-label"><strong>TINGGI</strong></label>
+                          <input type="text" class="form-control text-center" id="tinggiS" placeholder="MASUKKAN TINGGI SEGITIGA">
+                      </div>
 
-
-
+                      
+                      <!-- TOMBOL AWAL -->
+                      <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn btn-primary" type="button" id="tombolS">HITUNG</button>
+                      </div>
+                      <!-- TOMBOL AKHIR -->
+              
+                      <div class="pt-4 pb-2">
+                        <input type="text" class=" input text-center" id="luasS" placeholder="HASIL">
+                      </div>
+                  </div>
+                  <!-- SEGITIGA AKHIR -->
+                  <!-- SEGITIGA AKHIR -->
+                  <!-- SEGITIGA AKHIR -->
+              </div>
+            </div>
+          </div>
+        </div>
 
 
       </div>
